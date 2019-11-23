@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+    int n;
+    printf("What is your amount?\n");
+    scanf("%d", &n);
+
+    printf("\n%d note(s) de TK 1000,00\n", n/1000);
+    n %= 1000;
+    printf("%d note(s) de TK 500,00\n", n/500);
+    n %= 500;
+    printf("%d note(s) de TK 100,00\n", n/100);
+    n %= 100;
+    printf("%d note(s) de TK 50,00\n", n/50);
+    n %= 50;
+    printf("%d note(s) de TK 20,00\n", n/20);
+    n %= 20;
+    printf("%d note(s) de TK 10,00\n", n/10);
+    n %= 10;
+    printf("%d note(s) de TK 5,00\n", n/5);
+    n %= 5;
+    printf("%d note(s) de TK 2,00\n", n/2);
+    n %= 2;
+    printf("%d note(s) de TK 1,00\n", n);
+    return 0;
+}
